@@ -13,7 +13,6 @@ public class test1{
         int result;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите выражение: ");
         String line_for_user = scanner.nextLine();
         String[] spam_method_check = line_for_user.split("[+\\-*/]");
         // -=>
@@ -22,23 +21,16 @@ public class test1{
         String math_method_spell = math_detect_method(line_for_user); // + - * /
 
         try{
-                    number_int = Integer.parseInt(spam_method_check[0]);
-                    number_int2 = Integer.parseInt(spam_method_check[1]);
-                    math_lab_for_result(number_int, number_int2, math_method_spell);
 
+          number_int = Integer.parseInt(spam_method_check[0]);
+          number_int2 = Integer.parseInt(spam_method_check[1]);
+          math_lab_for_result(number_int, number_int2, math_method_spell);
         }catch (Exception e){
-        if(dmath_point.convert_number_check(spam_method_check[0]) && dmath_point.convert_number_check(spam_method_check[1])){
 
-                     number_int = dmath_point.convert_number_correct(spam_method_check[0]);
-                     number_int2 = dmath_point.convert_number_correct(spam_method_check[1]);
-                     math_lab_for_result(number_int, number_int2, math_method_spell);
+          number_int = dmath_point.convert_number_correct(spam_method_check[0]);
+          number_int2 = dmath_point.convert_number_correct(spam_method_check[1]);
+          math_lab_for_result(number_int, number_int2, math_method_spell);
         }
-
-        }finally {
-                    System.out.println("throw exception with number");
-                    System.out.println("=> " + spam_method_check[0]);
-                    System.out.println("=> " + spam_method_check[1]);
-         }
     }
 
     public static int math_lab_for_result(int a, int b, String math_method) throws Exception {

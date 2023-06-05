@@ -39,25 +39,19 @@ public class test1{
 
         if(a < -1 || a > 10 || b < -1 || b > 10){
             throw new Exception("Число меньше 0 или больше 10");
-        }
-
-        if(math_method.contains("+")){
+        }if(math_method.contains("+")){
             result = a + b;
             System.out.println(result);return result;
-        }
-        if (math_method.contains("-")){
+        }if (math_method.contains("-")){
             result = a - b;
             System.out.println(result);return result;
-        }
-        if(math_method.contains("*")){
+        }if(math_method.contains("*")){
             result = a * b;
             System.out.println(result);return result;
-        }
-        if(math_method.contains("/")){
+        }if(math_method.contains("/")){
             result = a / b;
             System.out.println(result);return result;
-        }
-        else throw new Exception("Числа в разных форматах!! ");
+        }else throw new Exception("Числа в разных форматах!! ");
 
     }
 

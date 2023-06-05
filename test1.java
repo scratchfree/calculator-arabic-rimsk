@@ -7,11 +7,12 @@ import java.util.Scanner;
 public class test1{
 
     public static void main(String[] args) throws Exception {
-
-        math_point dmath_point = new math_point();
-        int number_int, number_int2;
+        
+        int number_int;
+        int number_int2;
         int result;
 
+        math_point dmath_point = new math_point();
         Scanner scanner = new Scanner(System.in);
         String line_for_user = scanner.nextLine();
         String[] spam_method_check = line_for_user.split("[+\\-*/]");
